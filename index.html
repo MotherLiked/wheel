@@ -6,34 +6,38 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Главная - На колесах</title>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-<header>
-    <a href="http://htmlbook.ru/html/a">
-        <img src="https://cdn.icon-icons.com/icons2/197/PNG/128/bikewheel_23965.png"
-                alt="Logo"
-                width="50">
-        <span>На колесах</span>
-    </a>
+<header id="header">
+    <div class="container">
+        <a id="logo" href="http://htmlbook.ru/html/a">
+            <img src="https://cdn.icon-icons.com/icons2/197/PNG/128/bikewheel_23965.png" alt="Logo">
+            <span>На колесах</span>
+        </a>
 
-    <nav>
-        <ul>
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">Контакты</a></li>
-            <li><a href="#">Описание</a></li>
-        </ul>
-    </nav>
+        <nav>
+            <ul class="menu-list">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Описание</a></li>
+            </ul>
+        </nav>
+
+        <button class="btn btn-auth">Войти</button>
+    </div>
 </header>
 
 <main>
-    <div>
+    <div class="container">
         <h1>Сервис по поиску нужного автомобиля</h1>
         <p>На сайте представлен каталог автомобилей разных марок с выбором по фильтрам</p>
-        <img width="400" src="https://static.tildacdn.com/tild6434-6636-4439-b534-313332666237/landing1.jpg" alt="Сервис по поиску нужного автомобиля">
+        <img width="400" src="img/catalog-banner.jpg" alt="Сервис по поиску нужного автомобиля">
     </div>
 
-    <div>
+    <div class="container">
         <h2>Каталог автомобилей</h2>
         <div>
 
@@ -48,7 +52,7 @@
                     позже началось производство. Автомобиль выпускался с тремя вариантами кузова: седан, хэтчбек и
                     универсал.
                 </p>
-                <img src="https://s.auto.drom.ru/i24196/c/photos/generations/500x_mazda_mazda6_g4572.jpg?464916" alt="Mazda 6 GG (рестайлинг)">
+                <img src="img/mazda6.jpg" alt="Mazda 6 GG (рестайлинг)">
                 <a href="#" target="_blank">Подробнее</a>
             </div>
             <div>
@@ -61,7 +65,7 @@
                     управляемость машины, но служат повышению безопасности. Новый Outlander предлагает достаточно
                     просторный, комфортный салон и оснащается более мощными, экономичными двигателями.
                 </p>
-                <img src="https://s.auto.drom.ru/i24198/c/photos/generations/500x_mitsubishi_outlander_g5140.jpg?536605" alt="Mitsubishi Outlander CW0W">
+                <img src="img/outlander.jpg" alt="Mitsubishi Outlander CW0W">
                 <a href="#" target="_blank">Подробнее</a>
             </div>
             <div>
@@ -76,7 +80,7 @@
                     системой Valvematic для машин со стандартной колесной базой, а в длиннобазную версию устанавливался
                     2,4-литровый мотор.
                 </p>
-                <img src="https://s.auto.drom.ru/i24207/c/photos/generations/500x_toyota_rav4_g908.jpg?699724" alt="Toyota RAV4 XA30 (2 рестайлинг)">
+                <img src="img/rav4.jpg" alt="Toyota RAV4 XA30 (2 рестайлинг)">
                 <a href="#" target="_blank">Подробнее</a>
             </div>
 
@@ -85,15 +89,17 @@
 </main>
 
 <footer>
-    <ul>
-        <li><a href="#">Контакты</a></li>
-        <li><a href="#">Описание</a></li>
-    </ul>
+    <div class="container">
+        <ul>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Описание</a></li>
+        </ul>
 
-    <ul>
-        <li><a href="#">Политика конфиденциальности</a></li>
-        <li><a href="#">Условия использования</a></li>
-    </ul>
+        <ul>
+            <li><a href="#">Политика конфиденциальности</a></li>
+            <li><a href="#">Условия использования</a></li>
+        </ul>
+    </div>
 </footer>
 
 </body>
