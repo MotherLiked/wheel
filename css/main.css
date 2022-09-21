@@ -72,6 +72,10 @@ main {
     display: flex;
 }
 
+#logo img {
+    width: 50px;
+}
+
 #logo span {
     font-size: 32px;
     font-weight: bold;
