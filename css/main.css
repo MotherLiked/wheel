@@ -9,6 +9,10 @@ a {
     color: inherit;
 }
 
+h1 {
+    font-size: 32px;
+}
+
 body {
     font-family: 'M PLUS 1p';
     font-size: 16px;
@@ -44,6 +48,7 @@ main {
     height: 60px;
     display: flex;
     align-items: center;
+    z-index: 1;
 }
 
 #header .container {
@@ -151,4 +156,39 @@ footer .footer-menu a:hover {
 
 .last-footer-block a:hover {
     color: #fff;
+}
+
+
+.head-block {
+    background-color: #E7ECF0;
+    height: 370px;
+    margin-bottom: 40px;
+    box-shadow: 0 1px 8px 0 #c3c8d0;
+}
+
+.head-block h1 {
+    padding-top: 75px;
+    color: #475468;
+}
+
+.head-block h1 .main-text:first-child {
+    font-size: 45px;
+    display: block;
+}
+
+.head-block h1 .main-text:last-child {
+    font-size: 50px;
+    line-height: 0.5;
+}
+
+.head-block p {
+    font-size: 18px;
+    margin-top: 30px;
+    width: 50%;
+}
+
+.head-block img {
+    width: 695px;
+    right: 16%;
+    position: absolute;
 }
