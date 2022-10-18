@@ -161,28 +161,34 @@ footer .footer-menu a:hover {
 
 .head-block {
     background-color: #E7ECF0;
-    background-image: url("../img/catalog-banner.jpg");
     height: 370px;
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: top 10% right;
     margin-bottom: 40px;
     box-shadow: 0 1px 8px 0 #c3c8d0;
 }
 
 .head-block h1 {
-    padding-top: 160px;
+    padding-top: 75px;
+    color: #475468;
+}
+
+.head-block h1 .main-text:first-child {
+    font-size: 45px;
+    display: block;
+}
+
+.head-block h1 .main-text:last-child {
+    font-size: 50px;
+    line-height: 0.5;
 }
 
 .head-block p {
     font-size: 18px;
-    margin-top: 14px;
+    margin-top: 30px;
+    width: 50%;
 }
 
 .head-block img {
-    width: 350px;
+    width: 695px;
+    right: 16%;
     position: absolute;
-    transform: scale(-1, 1) rotate(25deg);
-    margin-left: -100px;
-    margin-top: 5px;
 }
