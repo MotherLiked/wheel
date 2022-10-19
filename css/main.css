@@ -13,6 +13,10 @@ h1 {
     font-size: 32px;
 }
 
+h2 {
+    font-size: 28px;
+}
+
 body {
     font-family: 'M PLUS 1p';
     font-size: 16px;
@@ -191,4 +195,73 @@ footer .footer-menu a:hover {
     width: 695px;
     right: 16%;
     position: absolute;
+}
+
+.catalog-page h2 {
+    color: #475468;
+}
+
+.filter-block {
+    float: left;
+    width: 265px;
+    height: 300px;
+    border: 1px solid #a5aaaa;
+    border-radius: 6px;
+    margin-right: 20px;
+    margin-top: 15px;
+    padding: 20px;
+}
+
+.catalog-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards-block {
+
+}
+
+.card-item {
+    border: 1px solid #a5aaaa;
+    border-radius: 6px;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.card-item img {
+    float: left;
+    width: 250px;
+    height: 200px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.card-item .card-text-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-item .card-text-items h3 {
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-bottom: 10px;
+}
+
+.card-item .card-text-items .btn {
+    opacity: 0.8;
+    font-weight: normal;
+    color: #ecebeb;
+    background-color: #5b6a88;
+    border: none;
+    float: right;
+}
+
+.card-item .card-text-items p {
+    color: #475468;
+    font-size: 16px;
+    max-height: 100px;
+    overflow: hidden;
+    margin-bottom: 28px;
 }
