@@ -36,8 +36,8 @@ main {
 }
 
 .container {
-    width: 1200px;
-    min-width: 1200px;
+    width: 1100px;
+    min-width: 1100px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 5px;
@@ -90,6 +90,10 @@ main {
     font-weight: bold;
     color: #475468;
     margin-left: 8px;
+}
+
+.logo:hover span {
+    color: #5f6f87;
 }
 
 .btn {
@@ -193,7 +197,7 @@ footer .footer-menu a:hover {
 
 .head-block img {
     width: 695px;
-    right: 16%;
+    right: 5%;
     position: absolute;
 }
 
@@ -209,16 +213,116 @@ footer .footer-menu a:hover {
     border-radius: 6px;
     margin-right: 20px;
     margin-top: 15px;
-    padding: 20px;
+    padding: 10px 20px;
+    color: #475468;
+}
+
+.filter-block #filter-text {
+    margin-bottom: 10px;
+}
+
+.filter-block .filter-item {
+    margin-bottom: 10px;
+}
+
+.filter-block .filter-group {
+    margin-top: 5px;
+}
+
+.filter-block .filter-buttons {
+    text-align: center;
+}
+
+.filter-block .filter-button {
+    color: #ecebeb;
+    background-color: #5b6a88;
+    opacity: 0.8;
+    border-radius: 4px;
+}
+
+.filter-block .filter-button:hover {
+    color: #ffffff;
+    background-color: #7284a3;
+}
+
+.checkbox input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.checkbox label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.checkbox label::before {
+    content: '\00A0';
+    color: #eae5e5;
+    font-size: 12px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #475468;
+    border-radius: 4px;
+    margin-right: 5px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.checkbox input:checked+label::before {
+    content: "\2714";
+    border-color: #475468;
+    background-color: #475468;
+}
+
+.radio-toggle {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.radio-toggle .radio {
+    float: left;
+    display: inline-block;
+}
+
+.radio-toggle input[type=radio] {
+    display: none;
+}
+
+.radio-toggle label {
+    display: inline-block;
+    padding: 0 15px;
+    line-height: 34px;
+    border: 1px solid #a5aaaa;
+    cursor: pointer;
+    user-select: none;
+}
+
+.radio-toggle .radio:first-child label {
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+}
+
+.radio-toggle .radio:last-child label {
+    border-radius: 0 8px 8px 0;
+}
+
+.radio-toggle input[type=radio]:checked + label {
+    background: #475468;
+    color: #eae5e5;
 }
 
 .catalog-content {
     display: flex;
     flex-direction: column;
-}
-
-.cards-block {
-
 }
 
 .card-item {
@@ -258,10 +362,176 @@ footer .footer-menu a:hover {
     float: right;
 }
 
+.card-item .card-text-items .btn:hover {
+    color: #ffffff;
+    background-color: #7284a3;
+}
+
 .card-item .card-text-items p {
     color: #475468;
     font-size: 16px;
     max-height: 100px;
     overflow: hidden;
     margin-bottom: 28px;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 900px;
+        max-width: 900px;
+        min-width: auto;
+    }
+    .head-block img {
+        width: 625px;
+        margin-top: 28px;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        width: 750px;
+        max-width: 750px;
+    }
+    .logo span {
+        font-size: 28px;
+    }
+    .logo img {
+        width: 45px;
+        height: 45px;
+    }
+    #header nav {
+        width: 40%;
+    }
+    .head-block {
+        height: 315px;
+    }
+    .head-block h1 {
+        padding-top: 30px;
+    }
+    .head-block img {
+        width: 500px;
+        margin-top: 20px;
+    }
+    .head-block h1 .main-text:last-child {
+        font-size: 40px;
+    }
+    .head-block h1 .main-text:first-child {
+        font-size: 40px;
+    }
+    .filter-block {
+        width: 195px;
+    }
+    .card-item img {
+        width: 220px;
+        height: 160px;
+        margin-top: 40px;
+    }
+    .card-item .card-text-items h3 {
+        position: absolute;
+        max-width: 460px;
+        margin-left: -240px;
+    }
+    .card-item .card-text-items p {
+        margin-top: 40px;
+        max-height: 92px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: auto;
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #header nav {
+        display: none;
+    }
+    .btn-auth {
+        display: none;
+    }
+    .head-block {
+        height: auto;
+        padding-bottom: 30px;
+    }
+    .head-block img {
+        display: none;
+    }
+    .head-block h1 .main-text:first-child {
+        font-size: 28px;
+        display: inline-block;
+        margin-right: 7px;
+    }
+    .head-block h1 .main-text:last-child {
+        font-size: 28px;
+        display: inline-block;
+        margin-left: 7px;
+    }
+    .head-block h1 {
+        font-size: 28px;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .head-block p {
+        width: 100%;
+        text-align: center;
+    }
+    .filter-block {
+        float: none;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 20px 10px;
+        display: block;
+        width: auto;
+        height: auto;
+    }
+    .filter-block .checkbox-group {
+        display: flex;
+        justify-content: left;
+        flex-wrap: wrap;
+    }
+    .filter-block .checkbox-group .checkbox {
+        width: 35%;
+    }
+    .filter-block .filter-item h3 {
+        margin-left: 14%;
+    }
+    .filter-block .radio-group {
+        margin-left: 14%;
+    }
+    .filter-block .filter-buttons {
+        text-align: left;
+        margin-left: 13%;
+        margin-bottom: 20px;
+    }
+    .card-item img {
+        float: none;
+    }
+    .card-item .card-text-items h3 {
+        max-width: 80%;
+        margin-left: 0;
+        margin-top: -210px;
+    }
+    .card-item .card-text-items p {
+        margin-top: 10px;
+    }
+    .card-item .card-text-items .btn {
+        float: none;
+    }
+    .card-item .card-text-items .card-buttons {
+        text-align: center;
+    }
+    .last-footer-block ul {
+        margin-top: 10px;
+        flex-direction: column;
+        float: none;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .filter-block .checkbox-group .checkbox {
+        width: 49%;
+    }
 }
